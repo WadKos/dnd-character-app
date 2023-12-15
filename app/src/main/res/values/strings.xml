@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">dnd-application</string>
+    <string name="character_list_header">Character List</string>
+</resources>
