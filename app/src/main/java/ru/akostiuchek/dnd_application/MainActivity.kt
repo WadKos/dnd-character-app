@@ -8,8 +8,6 @@ import ru.akostiuchek.dnd_application.Character
 
 class MainActivity : AppCompatActivity() {
 
-//    var listOfCharacter: MutableList<Character> = mutableListOf<Character>()
-
     private lateinit var newRecyclerView: RecyclerView
     private lateinit var newArrayList: ArrayList<Character>
     lateinit var characterName : Array<String>
@@ -24,18 +22,45 @@ class MainActivity : AppCompatActivity() {
             "Pidrilkin",
             "Shtormar",
             "Slonid",
+            "Kuban",
+            "Pidrilkin",
+            "Shtormar",
+            "Slonid",
+            "Kuban",
+            "Pidrilkin",
+            "Shtormar",
+            "Slonid",
+            "Kuban",
         )
 
         characterRace = arrayOf(
             "Dwarf",
             "Human",
             "Elephant",
+            "Asian",
+            "Dwarf",
+            "Human",
+            "Elephant",
+            "Asian",
+            "Dwarf",
+            "Human",
+            "Elephant",
+            "Asian",
         )
 
         characterClass = arrayOf(
             "Hunter",
             "Mage",
             "Druid",
+            "Powerlifter",
+            "Hunter",
+            "Mage",
+            "Druid",
+            "Powerlifter",
+            "Hunter",
+            "Mage",
+            "Druid",
+            "Powerlifter",
         )
 
         newRecyclerView = findViewById(R.id.recyclerView)
@@ -48,7 +73,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun getUserData() {
         for (i in characterName.indices) {
-            val character = Character(i, characterName[i], characterRace[i], characterClass[i])
+            val character = Character(characterName[i], characterRace[i], characterClass[i])
             newArrayList.add(character)
         }
 
