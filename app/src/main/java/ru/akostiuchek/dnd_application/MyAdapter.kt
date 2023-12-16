@@ -33,4 +33,5 @@ class MyAdapter(private val characterList : ArrayList<Character>) : RecyclerView
         val tvName : TextView = characterView.findViewById(R.id.name)
         val tvRaceClass : TextView = characterView.findViewById(R.id.raceClass)
     }
+
 }

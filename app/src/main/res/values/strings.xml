@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">dnd-application</string>
     <string name="character_list_header">Character List</string>
+    <string name="add_character_header">Add new character</string>
 </resources>
