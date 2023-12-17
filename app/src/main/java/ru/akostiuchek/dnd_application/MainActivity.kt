@@ -81,11 +81,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnAdd : ImageView = findViewById(R.id.icPlus)
         btnAdd.setOnClickListener {
-//            val addCharacterActivityIntent : Intent = Intent(this, AddCharacterActivity::class.java)
-//            startActivity(addCharacterActivityIntent)
-            startActivity(Intent(this, AddCharacterActivity::class.java)).apply {
-//                putExtraData("1", 1)
-            }
+            val addCharacterActivityIntent : Intent = Intent(this, AddNewCharacterActivity::class.java)
+            startActivity(addCharacterActivityIntent)
         }
 
     }

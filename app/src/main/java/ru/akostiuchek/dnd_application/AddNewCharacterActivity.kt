@@ -3,19 +3,13 @@ package ru.akostiuchek.dnd_application
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import ru.akostiuchek.dnd_application.Character
 
-class AddCharacterActivity : AppCompatActivity() {
-
+class AddNewCharacterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_character)
+        setContentView(R.layout.activity_add_new_character)
 
         val btnCorrect : ImageView = findViewById(R.id.icCorrect)
 
