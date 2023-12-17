@@ -18,14 +18,17 @@ class AddNewCharacterActivity : AppCompatActivity() {
             val characterRace : EditText = findViewById(R.id.etRace)
             val characterClass : EditText = findViewById(R.id.etClass)
 
-            val character : Character = Character(
-                characterName.text.toString(),
-                characterRace.text.toString(),
-                characterClass.text.toString())
+//            val character : Character = Character(
+//                characterName.text.toString(),
+//                characterRace.text.toString(),
+//                characterClass.text.toString())
 
 
-            MainActivity().newArrayList.add(character)
+//            MainActivity().newArrayList.add(character)
             val mainActivityIntent : Intent = Intent(this, MainActivity::class.java)
+            mainActivityIntent.putExtra("name",characterName.text.toString())
+            mainActivityIntent.putExtra("race",characterRace.text.toString())
+            mainActivityIntent.putExtra("class",characterClass.text.toString())
             startActivity(mainActivityIntent)
         }
     }

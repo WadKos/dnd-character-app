@@ -13,7 +13,7 @@ import ru.akostiuchek.dnd_application.Character
 class MainActivity : AppCompatActivity() {
 
     private lateinit var newRecyclerView: RecyclerView
-    public lateinit var newArrayList: ArrayList<Character>
+    lateinit var newArrayList: ArrayList<Character>
     lateinit var characterName : Array<String>
     lateinit var characterRace : Array<String>
     lateinit var characterClass : Array<String>
@@ -32,25 +32,9 @@ class MainActivity : AppCompatActivity() {
             "Shtormar",
             "Slonid",
             "Kuban",
-            "Pidrilkin",
-            "Shtormar",
-            "Slonid",
-            "Kuban",
-            "Pidrilkin",
-            "Shtormar",
-            "Slonid",
-            "Kuban",
         )
 
         characterRace = arrayOf(
-            "Dwarf",
-            "Human",
-            "Elephant",
-            "Asian",
-            "Dwarf",
-            "Human",
-            "Elephant",
-            "Asian",
             "Dwarf",
             "Human",
             "Elephant",
@@ -62,14 +46,7 @@ class MainActivity : AppCompatActivity() {
             "Mage",
             "Druid",
             "Powerlifter",
-            "Hunter",
-            "Mage",
-            "Druid",
-            "Powerlifter",
-            "Hunter",
-            "Mage",
-            "Druid",
-            "Powerlifter",
+
         )
 
         newRecyclerView = findViewById(R.id.recyclerView)
@@ -78,6 +55,15 @@ class MainActivity : AppCompatActivity() {
 
         newArrayList = arrayListOf<Character>()
         getUserData()
+
+        val newCharacterName : String = intent.getStringExtra("name") ?: "New Name"
+        val newCharacterRace : String = intent.getStringExtra("race") ?: "New Race"
+        val newCharacterClass : String = intent.getStringExtra("class") ?: "New class"
+
+
+        val newCharacter : Character = Character(newCharacterName, newCharacterRace, newCharacterClass)
+
+        newArrayList.add(newCharacter)
 
         val btnAdd : ImageView = findViewById(R.id.icPlus)
         btnAdd.setOnClickListener {
