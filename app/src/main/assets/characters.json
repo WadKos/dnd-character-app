@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Pidrilkin",
+    "race": "Dwarf",
+    "class": "Hunter"
+  },
+  {
+    "id": 2,
+    "name": "Shtormar",
+    "race": "Human",
+    "class": "Mage"
+  },
+  {
+    "id": 3,
+    "name": "Slonid",
+    "race": "Elephant",
+    "class": "Druid"
+  },
+  {
+    "id": 4,
+    "name": "Kuban",
+    "race": "Asian",
+    "class": "Powerlifter"
+  }
+]
